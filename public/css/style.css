@@ -81,6 +81,9 @@ td:not([align]),
 th:not([align]) {
   text-align: left; }
 
+main {
+  display: block; }
+
 /* COLORS */
 /* BREADCRUMB */
 .mt-sm {
@@ -230,13 +233,18 @@ th:not([align]) {
   list-style: none;
   display: inline-block; }
   .menu-item {
-    padding: .5rem .75rem;
+    padding: 0.5rem 0.75rem;
     display: block;
-    border: 1px solid rgba(0, 0, 0, 0.3); }
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left; }
+    .menu-item > * {
+      text-align: inherit; }
   .menu-item + .menu-item {
     border-top-width: 0; }
 
 .container {
-  max-width: 1120px;
   width: 100%;
   margin: auto; }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1140px; } }
