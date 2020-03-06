@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $color-white;
+  border: 1px solid rgba($color-black, 0.15);
+
+  &-img {
+    width: 100%;
+  }
+
+  &-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba($color-black, 0.03);
+    border-bottom: 1px solid rgba($color-black, 0.125);
+  }
+
+  &-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba($color-black, 0.03);
+    border-top: 1px solid rgba($color-black, 0.125);
+  }
+
+  &-body {
+    padding: 1.25rem;
+    flex: 1 1 auto;
+    min-height: 1px;
+  }
+
+  &-title {
+    margin-bottom: 0.75rem;
+  }
+
+  &-subtitle {
+    margin-top: -0.3rem;
+  }
+
+  &-text {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

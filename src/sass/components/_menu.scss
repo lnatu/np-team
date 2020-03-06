@@ -1,0 +1,19 @@
+.menu {
+  list-style: none;
+  display: inline-block;
+
+  &-item {
+    padding: 0.5rem 0.75rem;
+    display: block;
+    border: 1px solid rgba($color-black, 0.3);
+    text-align: left;
+
+    & > * {
+      text-align: inherit;
+    }
+  }
+
+  &-item + &-item {
+    border-top-width: 0;
+  }
+}
