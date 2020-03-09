@@ -5,3 +5,15 @@
 .mb-sm {
   margin-bottom: 2rem;
 }
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
