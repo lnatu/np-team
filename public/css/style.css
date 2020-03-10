@@ -9,7 +9,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400; }
 
 html,
@@ -251,6 +251,18 @@ main {
   .menu-item + .menu-item {
     border-top-width: 0; }
 
+.message {
+  padding: 10px;
+  background-color: #d0d2d6;
+  color: #fff;
+  display: block; }
+  .message-danger {
+    background-color: #DC3545; }
+  .message-primary {
+    background-color: #007BFF; }
+  .message-success {
+    background-color: #28A745; }
+
 .modal {
   position: fixed;
   top: 0;
@@ -305,6 +317,52 @@ main {
     justify-content: flex-end;
     padding: 0.75rem;
     border-top: 1px solid #dee2e6; }
+
+.tab {
+  list-style: none;
+  display: flex; }
+  .tab-link {
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+    border: 1px solid #007BFF; }
+    .tab-link.active {
+      background-color: #007BFF;
+      color: #fff; }
+  .tab-item + .tab-item .tab-link {
+    border-left-width: 0; }
+  .tab-pane {
+    transition: all 0.2s; }
+    .tab-pane:not(.show) {
+      opacity: 0; }
+    .tab-pane:not(.active) {
+      display: none; }
+  .tab-content {
+    margin-top: 30px; }
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none; }
+  .pagination .page-item.active .page-link {
+    background-color: #007BFF;
+    color: #fff; }
+  .pagination .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007BFF;
+    background-color: #fff;
+    border: 1px solid #dee2e6; }
+    .pagination .page-link:hover {
+      z-index: 2;
+      color: #007BFF;
+      text-decoration: none;
+      background-color: #e9ecef;
+      border-color: #dee2e6; }
 
 .container {
   width: 100%;

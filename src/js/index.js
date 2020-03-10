@@ -67,3 +67,51 @@ Modal.prototype.initEvents = function() {
 
 var modal = new Modal();
 modal.initEvents();
+
+var Tab = function() {
+  this.tabLink = document.querySelectorAll('.tab-link');
+  this.tabPane = document.querySelectorAll('.tab-pane');
+  this.tabLinkParent = '';
+  this.tabContentParent = '';
+};
+
+Tab.prototype.hideTabPane = function(parent) {
+  var tabPane = document.querySelectorAll('#' + parent + ' .tab-pane');
+  for (var i = 0; i < tabPane.length; i++) {
+    tabPane[i].classList.remove('show');
+    tabPane[i].classList.remove('active');
+  }
+};
+
+Tab.prototype.deactiveLink = function(parent) {
+  var tabLink = document.querySelectorAll('#' + parent + ' .tab-link');
+  for (var i = 0; i < tabLink.length; i++) {
+    tabLink[i].classList.remove('active');
+  }
+};
+
+Tab.prototype.openTab = function() {
+  var tabLink = this.tabLink;
+  var _this = this;
+  for (var i = 0; i < tabLink.length; i++) {
+    tabLink[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      _this.tabLinkParent = this.parentElement.parentElement.id;
+      _this.tabContentParent = this.parentElement.parentElement.nextElementSibling.id;
+      _this.deactiveLink(_this.tabLinkParent);
+      _this.hideTabPane(_this.tabContentParent);
+      this.classList.add('active');
+      var tabTarget = this.dataset.tab;
+      var tabToShow = document.querySelector(tabTarget);
+      tabToShow.classList.add('show');
+      tabToShow.classList.add('active');
+    });
+  }
+};
+
+Tab.prototype.initEvents = function() {
+  this.openTab();
+};
+
+var tab = new Tab();
+tab.initEvents();

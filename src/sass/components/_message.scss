@@ -1,0 +1,18 @@
+.message {
+  padding: 10px;
+  background-color: $color-grey;
+  color: $color-white;
+  display: block;
+
+  &-danger {
+    background-color: $color-danger;
+  }
+
+  &-primary {
+    background-color: $color-primary;
+  }
+
+  &-success {
+    background-color: $color-success;
+  }
+}
