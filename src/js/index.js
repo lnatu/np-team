@@ -115,3 +115,20 @@ Tab.prototype.initEvents = function() {
 
 var tab = new Tab();
 tab.initEvents();
+
+var Navbar = function() {
+  this.toggle = document.querySelectorAll('.navbar-toggler');
+};
+
+Navbar.prototype.toggleNavbar = function() {
+  for (var i = 0; i < this.toggle.length; i++) {
+    this.toggle[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = this.dataset.target;
+      document.querySelector(target).classList.toggle('show');
+    });
+  }
+};
+
+var navbar = new Navbar();
+navbar.toggleNavbar();
