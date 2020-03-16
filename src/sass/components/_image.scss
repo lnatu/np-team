@@ -1,0 +1,23 @@
+.img-adapt {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.images-cover img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}

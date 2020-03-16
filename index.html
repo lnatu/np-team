@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="public/css/style.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.css">
   </head>
   <body>
     <main class="container">
@@ -424,6 +425,44 @@
           </ul>
         </nav>
       </div>
+
+      <div class="progress-cover mt-sm">
+        <h3>Progress</h3>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" data-valuenow="15" data-valuemin="0" data-valuemax="100"></div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" data-valuenow="78" data-valuemin="0" data-valuemax="100" data-showtext="1"></div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar bg-primary" role="progressbar" data-valuenow="450" data-valuemin="0" data-valuemax="500" data-showtext="1"></div>
+        </div>
+      </div>
+
+      <div class="notification-cover">
+        <h2>Notification</h2>
+        <button class="btn btn-primary" data-notification="#noti1">Show notification</button>
+        <div id="noti1" class="notification" data-position="right-bottom">
+          <div class="notification-header">
+            <strong class="mr-auto">Hey yo!</strong>
+            <small class="time">just now</small>
+            <button type="button" class=" close" data-offnotification="#noti1" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="notification-body">
+            See? Just like this.
+          </div>
+        </div>
+      </div>
+
+      <div class="images-cover mt-sm">
+        <img src="src/img/img-01.jpg" alt="image" class="img-thumbnail">
+        <img src="src/img/img-02.jpg" alt="image" class="rounded">
+      </div>
+
     </main>
     <script src="src/js/index.js"></script>
   </body>

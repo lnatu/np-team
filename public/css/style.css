@@ -150,6 +150,15 @@ main {
     .btn-success:hover {
       background-color: #1e7e34; }
 
+.bg-primary {
+  background-color: #007BFF !important; }
+
+.bg-danger {
+  background-color: #DC3545 !important; }
+
+.bg-success {
+  background-color: #28A745 !important; }
+
 .card {
   position: relative;
   display: flex;
@@ -222,6 +231,26 @@ main {
       color: #16181b;
       text-decoration: none;
       background-color: #f8f9fa; }
+
+.img-adapt {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+
+.rounded {
+  border-radius: 0.25rem !important; }
+
+.images-cover img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; }
 
 .list {
   display: flex;
@@ -385,6 +414,64 @@ main {
         color: #fff;
         background-color: #007BFF; }
 
+.notification {
+  max-width: 350px;
+  overflow: hidden;
+  font-size: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 0.25rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  transition: all cubic-bezier(0.5, 1.41, 1, 1.41) 0.5s; }
+  .notification.reveal {
+    opacity: 1; }
+  .notification-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    color: #6c757d;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative; }
+    .notification-header .time {
+      margin-right: 20px; }
+    .notification-header .close {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      cursor: pointer; }
+  .notification-body {
+    padding: 0.75rem; }
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5; }
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .tab {
   list-style: none;
   display: flex; }
@@ -430,6 +517,24 @@ main {
       text-decoration: none;
       background-color: #e9ecef;
       border-color: #dee2e6; }
+
+.progress {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #E9ECEF;
+  position: relative; }
+  .progress-cover {
+    margin-bottom: 25px; }
+  .progress-bar {
+    text-align: center;
+    color: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    background-color: #007BFF; }
 
 .container {
   width: 100%;

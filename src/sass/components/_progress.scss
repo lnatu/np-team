@@ -1,0 +1,22 @@
+.progress {
+  margin-bottom: 10px;
+  &-cover {
+    margin-bottom: 25px;
+  }
+
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #E9ECEF;
+  position: relative;
+
+  &-bar {
+    text-align: center;
+    color: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    background-color: $color-primary;
+  }
+}
