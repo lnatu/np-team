@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="public/css/style.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.css" />
   </head>
   <body>
     <main class="container">
@@ -103,6 +103,14 @@
           <li class="list-item">Item 3</li>
           <li class="list-item">Item 4</li>
         </ul>
+      </div>
+
+      <div class="button-cover mt-sm">
+        <h2>Button</h2>
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-success">Button</button>
+        <button class="btn btn-danger">Button</button>
+        <button class="btn btn-danger disabled" disabled>Button</button>
       </div>
 
       <div class="menu-cover mt-sm">
@@ -429,26 +437,53 @@
       <div class="progress-cover mt-sm">
         <h3>Progress</h3>
         <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" data-valuenow="15" data-valuemin="0" data-valuemax="100"></div>
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar"
+            data-valuenow="15"
+            data-valuemin="0"
+            data-valuemax="100"
+          ></div>
         </div>
 
         <div class="progress">
-          <div class="progress-bar bg-success" role="progressbar" data-valuenow="78" data-valuemin="0" data-valuemax="100" data-showtext="1"></div>
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            data-valuenow="78"
+            data-valuemin="0"
+            data-valuemax="100"
+            data-showtext="1"
+          ></div>
         </div>
 
         <div class="progress">
-          <div class="progress-bar bg-primary" role="progressbar" data-valuenow="450" data-valuemin="0" data-valuemax="500" data-showtext="1"></div>
+          <div
+            class="progress-bar bg-primary"
+            role="progressbar"
+            data-valuenow="450"
+            data-valuemin="0"
+            data-valuemax="500"
+            data-showtext="1"
+          ></div>
         </div>
       </div>
 
       <div class="notification-cover">
         <h2>Notification</h2>
-        <button class="btn btn-primary" data-notification="#noti1">Show notification</button>
+        <button class="btn btn-primary" data-notification="#noti1">
+          Show notification
+        </button>
         <div id="noti1" class="notification" data-position="right-bottom">
           <div class="notification-header">
             <strong class="mr-auto">Hey yo!</strong>
             <small class="time">just now</small>
-            <button type="button" class=" close" data-offnotification="#noti1" aria-label="Close">
+            <button
+              type="button"
+              class=" close"
+              data-offnotification="#noti1"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -459,10 +494,263 @@
       </div>
 
       <div class="images-cover mt-sm">
-        <img src="src/img/img-01.jpg" alt="image" class="img-thumbnail">
-        <img src="src/img/img-02.jpg" alt="image" class="rounded">
+        <img src="src/img/img-01.jpg" alt="image" class="img-thumbnail" />
+        <img src="src/img/img-02.jpg" alt="image" class="rounded" />
       </div>
 
+      <div class="table-cover mt-sm">
+        <h2>Table</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag-cover mt-sm">
+        <h2>Tag</h2>
+        <a href="#" class="tag">Tag 1</a>
+        <a href="#" class="tag tag-primary">Tag 2</a>
+        <a href="#" class="tag tag-danger">Tag 3</a>
+        <a href="#" class="tag tag-success">Tag 4</a>
+      </div>
+
+      <div class="title-cover mt-sm">
+        <h2>Title</h2>
+        <p class="title-1">Title 1</p>
+        <p class="title-2">Title 2</p>
+        <p class="title-3">Title 3</p>
+        <p class="title-4">Title 4</p>
+        <p class="title-5">Title 5</p>
+        <p class="title-6">Title 6</p>
+      </div>
+
+      <div class="form-cover mt-sm">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="grid-cover mt-sm">
+        <h2>Grid</h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                  architecto atque debitis eaque eos hic maiores neque quis
+                  temporibus unde. Doloremque, eum maiores numquam officia optio
+                  recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="src/js/index.js"></script>
   </body>

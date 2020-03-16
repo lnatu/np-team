@@ -55,6 +55,7 @@
     order: -1;
     display: flex;
     transition: all 0.3s;
+    z-index: 99;
     @media only screen and (max-width: 768px) {
       flex-direction: column;
       display: none;
