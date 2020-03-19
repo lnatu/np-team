@@ -1,0 +1,16 @@
+.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1111;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

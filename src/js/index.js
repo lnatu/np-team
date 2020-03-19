@@ -142,17 +142,29 @@ Navbar.prototype.toggleNavbar = function() {
     this.toggle[i].addEventListener('click', function(e) {
       e.preventDefault();
       var _TOGGLE_BUTTON_ = this;
+      _TOGGLE_BUTTON_.classList.add('disabled');
       var target = document.querySelector(this.dataset.target);
-
-      if (_TOGGLE_BUTTON_.classList.contains('test')) {
+      var _THIS_CLASSES_ = Array.prototype.slice.call(
+        _TOGGLE_BUTTON_.classList
+      );
+      if (_THIS_CLASSES_.indexOf('test') !== -1) {
+        var height2 = target.clientHeight;
         target.classList.remove('show');
         target.classList.remove('collapse');
         target.classList.add('collapsing');
-        target.classList.remove('collapsing');
-        target.classList.add('collapse');
-        _TOGGLE_BUTTON_.classList.remove('test');
+        target.style.height = height2 + 'px';
+        setTimeout(function() {
+          target.style.height = '0px';
+          target.addEventListener('transitionend', function() {
+            target.classList.remove('collapsing');
+            target.classList.remove('show');
+            target.classList.add('collapse');
+            target.setAttribute('style', '');
+            _TOGGLE_BUTTON_.classList.remove('test');
+            _TOGGLE_BUTTON_.classList.remove('disabled');
+          });
+        }, 0);
       } else {
-        _TOGGLE_BUTTON_.classList.add('test');
         target.classList.remove('collapse');
         var height = target.clientHeight;
         target.classList.add('collapsing');
@@ -163,6 +175,8 @@ Navbar.prototype.toggleNavbar = function() {
             target.setAttribute('style', '');
             target.classList.add('collapse');
             target.classList.add('show');
+            _TOGGLE_BUTTON_.classList.add('test');
+            _TOGGLE_BUTTON_.classList.remove('disabled');
           });
         }, 0);
       }
