@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Breadcrumb</h2>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item active">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">Shop</li>
+        <li class="breadcrumb-item">Blog</li>
+        <li class="breadcrumb-item">Page</li>
+      </ul>
+      <div class="breadcrumb">
+        <div class="breadcrumb-item">Home</div>
+        <div class="breadcrumb-item">Home</div>
+        <div class="breadcrumb-item active">
+          <a href="#">asd</a>
+        </div>
+        <div class="breadcrumb-item">Home</div>
+      </div>
+
+      <h2 class="mt-sm">Card</h2>
+      <div
+        class="card-cover mt-sm"
+        style="display: flex; justify-content: space-between;"
+      >
+        <div class="card" style="width: 48%">
+          <div class="card-header">
+            Card header
+          </div>
+          <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+          <div class="card-body">
+            <h3 class="card-title">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, illum!
+            </h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              architecto atque debitis eaque eos hic maiores neque quis
+              temporibus unde. Doloremque, eum maiores numquam officia optio
+              recusandae. Modi, provident, voluptatem!
+            </p>
+          </div>
+          <div class="card-header">
+            Card footer
+          </div>
+        </div>
+        <div class="card" style="width: 48%;">
+          <div class="card-header">Header ne</div>
+          <img src="src/img/m2.jpg" alt="macbook" />
+          <div class="card-body">
+            <h4 class="card-title">Card title ne</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              aperiam aspernatur beatae dicta ex harum iusto laboriosam laborum
+              magnam tempore?
+            </p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              aperiam aspernatur beatae dicta ex harum iusto laboriosam laborum
+              magnam tempore?
+            </p>
+          </div>
+          <div class="card-footer">
+            Card footer ne
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-cover mt-sm">
+        <h2>Dropdown</h2>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle">dropdown</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-cover mt-sm">
+        <h2>List</h2>
+        <ul class="list">
+          <li class="list-item">Item 1</li>
+          <li class="list-item">Item 2</li>
+          <li class="list-item">Item 3</li>
+          <li class="list-item">Item 4</li>
+        </ul>
+        <div class="list mt-3">
+          <a href="#" class="list-item">Link 1</a>
+          <a href="#" class="list-item">Link 2</a>
+          <a href="#" class="list-item">Link 3</a>
+          <a href="#" class="list-item">Link 4</a>
+          <a href="#" class="list-item">Link 5</a>
+        </div>
+      </div>
+
+      <div class="button-cover mt-sm">
+        <h2>Button</h2>
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-success">Button</button>
+        <button class="btn btn-danger">Button</button>
+        <button class="btn btn-danger disabled" disabled>Button</button>
+      </div>
+
+      <div class="menu-cover mt-sm">
+        <h2>Menu</h2>
+        <ul class="menu">
+          <li class="menu-item">Menu 1</li>
+          <li class="menu-item">Menu 2</li>
+          <li class="menu-item">Menu 3</li>
+          <li class="menu-item">Menu 4</li>
+        </ul>
+      </div>
+
+      <div class="modal-cover mt-sm">
+        <h2>Modal</h2>
+        <button
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Modal
+        </button>
+        <div id="exampleModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modal-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  repudiandae earum quas laudantium laborum numquam totam quia!
+                  Fugiat quod veniam totam, cupiditate minima adipisci incidunt
+                  ducimus, sit quaerat architecto aliquid?
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger success mr-1"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-cover mt-sm">
+        <h2>Tab</h2>
+        <ul id="myTab" class="tab">
+          <li class="tab-item">
+            <a href="#" class="tab-link active" data-tab="#tab1">Tab 1</a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link" data-tab="#tab2">Tab 2</a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link" data-tab="#tab3">Tab 3</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div id="tab1" class="tab-pane show active">
+            <h3>Tab 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+          </div>
+          <div id="tab2" class="tab-pane">
+            <h3>Tab 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Beatae dolorum saepe perferendis repudiandae dolores quia,
+              asperiores, tempora enim accusamus tenetur omnis deserunt fugit,
+              expedita doloribus autem voluptatum adipisci minus inventore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+          </div>
+          <div id="tab3" class="tab-pane">
+            <h3>Tab 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Rerum in et, iure molestiae sunt sit praesentium
+              sint? Vero, recusandae! Ea ipsam odit porro autem maiores atque
+              inventore iure necessitatibus debitis?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Rerum in et, iure molestiae sunt sit
+              praesentium sint? Vero, recusandae! Ea ipsam odit porro autem
+              maiores atque inventore iure necessitatibus debitis?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Rerum in et, iure
+              molestiae sunt sit praesentium sint? Vero, recusandae! Ea ipsam
+              odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Rerum in et, iure molestiae sunt sit praesentium
+              sint? Vero, recusandae! Ea ipsam odit porro autem maiores atque
+              inventore iure necessitatibus debitis?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Rerum in et, iure molestiae sunt sit
+              praesentium sint? Vero, recusandae! Ea ipsam odit porro autem
+              maiores atque inventore iure necessitatibus debitis?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Rerum in et, iure
+              molestiae sunt sit praesentium sint? Vero, recusandae! Ea ipsam
+              odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-cover mt-sm">
+        <h2>Tab</h2>
+        <ul id="myTab1" class="tab">
+          <li class="tab-item">
+            <a href="#" class="tab-link active" data-tab="#tab12">Tab 1</a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link" data-tab="#tab22">Tab 2</a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link" data-tab="#tab32">Tab 3</a>
+          </li>
+        </ul>
+        <div id="myTabContent1" class="tab-content">
+          <div id="tab12" class="tab-pane show active">
+            <h3>Tab 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+          </div>
+          <div id="tab22" class="tab-pane">
+            <h3>Tab 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Beatae dolorum saepe perferendis repudiandae dolores quia,
+              asperiores, tempora enim accusamus tenetur omnis deserunt fugit,
+              expedita doloribus autem voluptatum adipisci minus inventore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?
+            </p>
+          </div>
+          <div id="tab32" class="tab-pane">
+            <h3>Tab 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+              et, iure molestiae sunt sit praesentium sint? Vero, recusandae! Ea
+              ipsam odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Rerum in et, iure molestiae sunt sit praesentium
+              sint? Vero, recusandae! Ea ipsam odit porro autem maiores atque
+              inventore iure necessitatibus debitis?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Rerum in et, iure molestiae sunt sit
+              praesentium sint? Vero, recusandae! Ea ipsam odit porro autem
+              maiores atque inventore iure necessitatibus debitis?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Rerum in et, iure
+              molestiae sunt sit praesentium sint? Vero, recusandae! Ea ipsam
+              odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Rerum in et, iure molestiae sunt sit praesentium
+              sint? Vero, recusandae! Ea ipsam odit porro autem maiores atque
+              inventore iure necessitatibus debitis?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Rerum in et, iure molestiae sunt sit
+              praesentium sint? Vero, recusandae! Ea ipsam odit porro autem
+              maiores atque inventore iure necessitatibus debitis?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Rerum in et, iure
+              molestiae sunt sit praesentium sint? Vero, recusandae! Ea ipsam
+              odit porro autem maiores atque inventore iure necessitatibus
+              debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Rerum in et, iure molestiae sunt sit praesentium sint? Vero,
+              recusandae! Ea ipsam odit porro autem maiores atque inventore iure
+              necessitatibus debitis?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-cover mt-sm">
+        <h2>Pagination</h2>
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="message-cover mt-sm">
+        <h2>Message</h2>
+        <div class="message message-danger">
+          <strong>Danger!</strong> Indicates a dangerous or potentially negative
+          action.
+        </div>
+        <div class="message message-success">
+          <strong>Danger!</strong> Indicates a dangerous or potentially negative
+          action.
+        </div>
+        <div class="message message-primary">
+          <strong>Danger!</strong> Indicates a dangerous or potentially negative
+          action.
+        </div>
+      </div>
+
+      <div class="navbar-cover mt-sm">
+        <h2>Navbar</h2>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Disabled
+                </a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </nav>
+      </div>
+
+      <div class="progress-cover mt-sm">
+        <h3>Progress</h3>
+        <div class="progress">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar"
+            data-valuenow="15"
+            data-valuemin="0"
+            data-valuemax="100"
+          ></div>
+        </div>
+
+        <div class="progress">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            data-valuenow="78"
+            data-valuemin="0"
+            data-valuemax="100"
+            data-showtext="1"
+          ></div>
+        </div>
+
+        <div class="progress">
+          <div
+            class="progress-bar bg-primary"
+            role="progressbar"
+            data-valuenow="450"
+            data-valuemin="0"
+            data-valuemax="500"
+            data-showtext="1"
+          ></div>
+        </div>
+      </div>
+
+      <div class="notification-cover">
+        <h2>Notification</h2>
+        <button class="btn btn-primary" data-notification="#noti1">
+          Show notification
+        </button>
+        <div id="noti1" class="notification" data-position="right-bottom">
+          <div class="notification-header">
+            <strong class="mr-auto">Hey yo!</strong>
+            <small class="time">just now</small>
+            <button
+              type="button"
+              class=" close"
+              data-offnotification="#noti1"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="notification-body">
+            See? Just like this.
+          </div>
+        </div>
+      </div>
+
+      <div class="images-cover mt-sm">
+        <h2>Images</h2>
+        <img src="src/img/img-01.jpg" alt="image" class="img-thumbnail" />
+        <img src="src/img/img-02.jpg" alt="image" class="rounded" />
+      </div>
+
+      <div class="table-cover mt-sm">
+        <h2>Table</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag-cover mt-sm">
+        <h2>Tag</h2>
+        <a href="#" class="tag">Tag 1</a>
+        <a href="#" class="tag tag-primary">Tag 2</a>
+        <a href="#" class="tag tag-danger">Tag 3</a>
+        <a href="#" class="tag tag-success">Tag 4</a>
+      </div>
+
+      <div class="title-cover mt-sm">
+        <h2>Title</h2>
+        <p class="title-1">Title 1</p>
+        <p class="title-2">Title 2</p>
+        <p class="title-3">Title 3</p>
+        <p class="title-4">Title 4</p>
+        <p class="title-5">Title 5</p>
+        <p class="title-6">Title 6</p>
+      </div>
+
+      <div class="form-cover mt-sm">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="grid-cover mt-sm">
+        <h2>Grid</h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-header">
+                Card header
+              </div>
+              <img class="card-img" src="src/img/m1.jpg" alt="macbook" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Excepturi, illum!
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi architecto atque debitis eaque eos hic maiores neque
+                  quis temporibus unde. Doloremque, eum maiores numquam officia
+                  optio recusandae. Modi, provident, voluptatem!
+                </p>
+              </div>
+              <div class="card-header">
+                Card footer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-cover mt-sm">
+        <p class="text-primary">asdasd</p>
+        <p class="text-danger">asdasd</p>
+        <p class="text-success">asdasd</p>
+        <p class="text-right text-truncate">asda</p>
+        <p class="text-center text-primary">asdasd</p>
+        <a href="#" class="text-decoration-none">qwlke</a>
+      </div>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

@@ -1,11 +1,25 @@
-.bg-primary {
-  background-color: $color-primary!important;
-}
+.bg {
+  &-primary {
+    background-color: $color-primary !important;
+  }
 
-.bg-danger {
-  background-color: $color-danger!important;
-}
+  &-danger {
+    background-color: $color-danger !important;
+  }
 
-.bg-success {
-  background-color: $color-success!important;
+  &-success {
+    background-color: $color-success !important;
+  }
+
+  &-light {
+    background-color: $color-light !important;
+  }
+
+  &-warning {
+    background-color: $color-warning !important;
+  }
+
+  &-dark {
+    background-color: $color-dark !important;
+  }
 }

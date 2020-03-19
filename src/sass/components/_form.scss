@@ -11,11 +11,10 @@
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: $color-white;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-top: 0.5rem;
 
   &:focus {
     color: #495057;
@@ -29,4 +28,9 @@
 textarea.form-control {
   height: auto;
   font-size: 1.25rem;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
 }

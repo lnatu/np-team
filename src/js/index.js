@@ -33,29 +33,46 @@ var dropdown = new Dropdown();
 dropdown.initEvents();
 
 var Modal = function() {
-  this.toggle = document.querySelector('button[data-toggle]');
+  this.toggle = document.querySelectorAll('button[data-toggle]');
   this.close = document.querySelectorAll('button[data-dismiss]');
   this.modal = document.querySelector('.modal');
 };
 
 Modal.prototype.toggleModal = function() {
-  this.toggle.addEventListener('click', function(e) {
-    e.preventDefault();
-    var toggleTarget = this.dataset.target;
-    var modalTartget = document.querySelector(toggleTarget);
-    modalTartget.style.display = 'block';
-    modalTartget.classList.add('show');
-  });
+  for (var i = 0; i < this.toggle.length; i++) {
+    this.toggle[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      var toggleTarget = this.dataset.target;
+      var modalTarget = document.querySelector(toggleTarget);
+      modalTarget.style.display = 'block';
+      setTimeout(function() {
+        modalTarget.classList.add('show');
+      }, 100);
+    });
+  }
 };
 
 Modal.prototype.closeModal = function() {
+  document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 27 || e.which === 27) {
+      var modal = document.querySelector('.modal.show');
+      if (modal.style.display !== 'none') {
+        modal.classList.remove('show');
+        setTimeout(function() {
+          modal.style.display = 'none';
+        }, 100);
+      }
+    }
+  });
+
   for (var i = 0; i < this.close.length; i++) {
     this.close[i].addEventListener('click', function(e) {
       e.preventDefault();
-      var dismiss = this.dataset.dismiss;
-      var modal = document.querySelector('.' + dismiss);
-      modal.style.display = 'none';
-      modal.classList.remove('show');
+      var modalTarget = document.querySelector('.modal.show');
+      modalTarget.classList.remove('show');
+      setTimeout(function() {
+        modalTarget.style.display = 'none';
+      }, 100);
     });
   }
 };
@@ -124,8 +141,31 @@ Navbar.prototype.toggleNavbar = function() {
   for (var i = 0; i < this.toggle.length; i++) {
     this.toggle[i].addEventListener('click', function(e) {
       e.preventDefault();
-      var target = this.dataset.target;
-      document.querySelector(target).classList.toggle('show');
+      var _TOGGLE_BUTTON_ = this;
+      var target = document.querySelector(this.dataset.target);
+
+      if (_TOGGLE_BUTTON_.classList.contains('test')) {
+        target.classList.remove('show');
+        target.classList.remove('collapse');
+        target.classList.add('collapsing');
+        target.classList.remove('collapsing');
+        target.classList.add('collapse');
+        _TOGGLE_BUTTON_.classList.remove('test');
+      } else {
+        _TOGGLE_BUTTON_.classList.add('test');
+        target.classList.remove('collapse');
+        var height = target.clientHeight;
+        target.classList.add('collapsing');
+        setTimeout(function() {
+          target.style.height = height + 'px';
+          target.addEventListener('transitionend', function() {
+            target.classList.remove('collapsing');
+            target.setAttribute('style', '');
+            target.classList.add('collapse');
+            target.classList.add('show');
+          });
+        }, 0);
+      }
     });
   }
 };
@@ -135,7 +175,7 @@ navbar.toggleNavbar();
 
 var Progress = function() {
   this.progressBars = document.querySelectorAll('.progress-bar');
-}
+};
 Progress.prototype.init = function() {
   var progressBars = this.progressBars;
   for (var i = 0; i < progressBars.length; i++) {
@@ -167,7 +207,6 @@ Progress.prototype.init = function() {
 var progress = new Progress();
 progress.init();
 
-
 var Notification = function() {
   this.toggleBtn = document.querySelectorAll('button[data-notification]');
   this.hideNoti = document.querySelectorAll('button[data-offnotification]');
@@ -179,7 +218,7 @@ Notification.prototype.initNotification = function() {
   for (var i = 0; i < notis.length; i++) {
     var _this = notis[i];
     [x, y] = _this.dataset.position.split('-');
-    _this.setAttribute('style', x + ':30px;' + y +':30px');
+    _this.setAttribute('style', x + ':30px;' + y + ':30px');
   }
 };
 
@@ -190,9 +229,13 @@ Notification.prototype.showNotification = function() {
     _this.addEventListener('click', function(e) {
       e.preventDefault();
       var _thisClicked = this;
-      document.querySelector(_thisClicked.dataset.notification).classList.add('reveal');
+      document
+        .querySelector(_thisClicked.dataset.notification)
+        .classList.add('reveal');
       setTimeout(function() {
-        document.querySelector(_thisClicked.dataset.notification).classList.remove('reveal');
+        document
+          .querySelector(_thisClicked.dataset.notification)
+          .classList.remove('reveal');
       }, 5000);
     });
   }
@@ -205,7 +248,9 @@ Notification.prototype.offNotification = function() {
     _this.addEventListener('click', function(e) {
       e.preventDefault();
       var _thisClicked = this;
-      document.querySelector(_thisClicked.dataset.offnotification).classList.remove('reveal');
+      document
+        .querySelector(_thisClicked.dataset.offnotification)
+        .classList.remove('reveal');
     });
   }
 };
