@@ -1,13 +1,15 @@
+@import "base/variables";
 @import "base/base";
 @import "base/reset";
-@import "base/variables";
 @import "base/helpers";
 
 @import "components/breadcrumb";
 @import "components/button";
 @import "components/bg";
+@import "components/border";
 @import "components/card";
 @import "components/dropdown";
+@import "components/display";
 @import "components/form";
 @import "components/image";
 @import "components/list";
@@ -22,6 +24,8 @@
 @import "components/progress";
 @import "components/table";
 @import "components/tag";
+@import "components/text";
 @import "components/title";
+@import "components/utilities";
 
 @import "layouts/container";

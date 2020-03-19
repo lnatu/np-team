@@ -10,10 +10,28 @@
   margin-right: 10px;
 }
 
+.mt-0 {
+  margin-top: 0!important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
 
 .fade:not(.show) {
   opacity: 0;
+}
+
+.disabled:disabled {
+  cursor: not-allowed;
+  pointer-events: all!important;
+}
+
+.disabled {
+  opacity: .65;
+  pointer-events: none!important;
 }

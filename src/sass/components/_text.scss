@@ -1,0 +1,57 @@
+.text {
+  &-justify {
+    text-align: justify !important;
+  }
+
+  &-wrap {
+    white-space: normal !important;
+  }
+
+  &-nowrap {
+    white-space: nowrap !important;
+  }
+
+  &-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+
+  &-decoration-none {
+    text-decoration: none !important;
+  }
+}
+
+.text {
+  &-primary {
+    color: $color-primary !important;
+  }
+
+  &-danger {
+    color: $color-danger !important;
+  }
+
+  &-success {
+    color: $color-success !important;
+  }
+
+  &-light {
+    color: $color-white !important;
+  }
+
+  &-info {
+    color: $color-info !important;
+  }
+}

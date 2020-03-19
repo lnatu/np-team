@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   border: 1px solid $color-grey;
   background-color: transparent;
   text-align: center;
@@ -11,6 +11,12 @@
   transition: all 0.15s;
   vertical-align: middle;
   font-size: 1rem;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.25);
+  }
 
   &.disabled,
   &.disabled {
@@ -42,6 +48,33 @@
     border-color: $color-success;
     &:hover {
       background-color: darken($color-success, 10%);
+    }
+  }
+
+  &-warning {
+    color: #fff;
+    background-color: $color-warning;
+    border-color: $color-warning;
+    &:hover {
+      background-color: darken($color-warning, 10%);
+    }
+  }
+
+  &-info {
+    color: #fff;
+    background-color: $color-info;
+    border-color: $color-info;
+    &:hover {
+      background-color: darken($color-info, 10%);
+    }
+  }
+
+  &-grey {
+    color: #fff;
+    background-color: $color-grey;
+    border-color: $color-grey;
+    &:hover {
+      background-color: darken($color-grey, 10%);
     }
   }
 }

@@ -5,12 +5,34 @@
   margin-bottom: 0;
   list-style: none;
 
+  &-horizontal {
+    flex-direction: row;
+  }
+
+  &-horizontal &-item + &-item {
+    border-top-width: 1px;
+    border-left-width: 0;
+  }
+
+  &.hover &-item:not(.active):hover {
+    background-color: rgba($color-black, 0.05);
+  }
+
   &-item {
     position: relative;
     display: block;
     padding: 0.75rem 1.25rem;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
+
+    &.active {
+      background-color: $color-primary;
+      color: #fff;
+
+      & > * {
+        color: inherit;
+      }
+    }
   }
 
   &-item + &-item {

@@ -1,0 +1,40 @@
+.d {
+  &-none {
+    display: none !important;
+  }
+
+  &-inline {
+    display: inline !important;
+  }
+
+  &-inline-block {
+    display: inline-block !important;
+  }
+
+  &-block {
+    display: block !important;
+  }
+
+  &-table {
+    display: table !important;
+  }
+
+  &-table-row {
+    display: table-row !important;
+  }
+
+  &-table-cell {
+    display: table-cell !important;
+  }
+
+  &-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  &-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+
+}

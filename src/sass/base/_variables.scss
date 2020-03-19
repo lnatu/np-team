@@ -6,6 +6,11 @@ $color-grey: #d0d2d6;
 $color-primary: #007BFF;
 $color-danger: #DC3545;
 $color-success: #28A745;
+$color-dark: #343A40;
+$color-info: #17A2B8;
+$color-border: #dee2e6;
+$color-warning: #FFC107;
+$color-light: #f8f9fa;
 
 /* BREADCRUMB */
 $breadcrumb-deliver: '/';
@@ -22,3 +27,13 @@ $table-dark-hover: #454d55;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+/* SPACING */
+$spacer-1: 10px;
+$spacer-2: 20px;
+$spacer-3: 30px;
+
+/* MODAL */
+$modal-small: 300px;
+$modal-big: 800px;
+$modal-large: 1140px;

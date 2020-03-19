@@ -14,3 +14,13 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:not(.btn):hover {
+    color: darken($color-primary, 10%);
+  }
+}
