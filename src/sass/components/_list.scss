@@ -33,9 +33,19 @@
         color: inherit;
       }
     }
+
+    a:hover {
+      transition: opacity .2s;
+      opacity: .7;
+    }
   }
 
   &-item + &-item {
     border-top-width: 0;
+  }
+
+  &.side-border-0 &-item {
+    border-left-width: 0;
+    border-right-width: 0;
   }
 }

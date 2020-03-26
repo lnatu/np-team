@@ -13,6 +13,10 @@
   margin-top: $spacer-3 !important;
 }
 
+.mt-lg {
+  margin-top: $spacer-lg !important;
+}
+
 .mr-0 {
   margin-bottom: 0 !important;
 }
@@ -39,6 +43,9 @@
 }
 .mb-3 {
   margin-bottom: $spacer-3 !important;
+}
+.mb-5 {
+  margin-bottom: $spacer-5 !important;
 }
 
 .ml-0 {
@@ -132,6 +139,11 @@
   padding-bottom: $spacer-3 !important;
 }
 
+.px-0 {
+ padding-left: 0!important;
+ padding-right: 0!important;
+}
+
 .pl-0 {
   padding-left: 0 !important;
 }
@@ -162,4 +174,8 @@
 
 .p-3 {
   padding: $spacer-3 !important;
+}
+
+.fw-bold {
+  font-weight: 700!important;
 }
