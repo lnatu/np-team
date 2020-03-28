@@ -277,3 +277,12 @@ Notification.prototype.initEvents = function() {
 
 var noti = new Notification();
 noti.initEvents();
+
+$(document).ready(function() {
+  $('.hero-slide').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false
+  });
+});

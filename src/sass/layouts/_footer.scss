@@ -1,3 +1,44 @@
 .footer {
+  padding: 0 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
   background-color: $color-black;
+
+  &-list {
+    color: #999;
+
+    &__title {
+      color: $color-white;
+      margin-bottom: 25px;
+      & * {
+        color: inherit;
+      }
+
+      a:hover {
+        color: currentColor;
+      }
+    }
+
+    &__item + &__item {
+      margin-top: 25px;
+    }
+
+    & * {
+      color: inherit;
+      font-weight: 600;
+    }
+
+    &__item &__link:hover {
+      color: currentColor;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+
+  &__item + &__item {
+    margin-left: 10%;
+  }
 }

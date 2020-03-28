@@ -11,8 +11,10 @@
       href="https://fonts.googleapis.com/css?family=Inter:300,400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../public/css/style.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="../public/css/slick-theme.css" />
+    <link rel="stylesheet" href="../public/css/slick.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
   </head>
   <body class="x-hidden">
     <header id="header" class="full-screen-height bg-warning">
@@ -110,11 +112,29 @@
         </div>
       </section>
       <section class="hero">
-        <img
-          class="hero__img"
-          src="../src/img/sight_to_see.jpg"
-          alt="sight to see"
-        />
+        <div class="hero-slide">
+          <div class="hero-slide__item">
+            <img
+              class="hero__img"
+              src="../src/img/sight_to_see.jpg"
+              alt="sight to see"
+            />
+          </div>
+          <div class="hero-slide__item">
+            <img
+              class="hero__img"
+              src="../src/img/sight_to_see.jpg"
+              alt="sight to see"
+            />
+          </div>
+          <div class="hero-slide__item">
+            <img
+              class="hero__img"
+              src="../src/img/sight_to_see.jpg"
+              alt="sight to see"
+            />
+          </div>
+        </div>
       </section>
     </header>
 
@@ -345,28 +365,179 @@
 
     <footer class="footer mt-lg">
       <div class="container-fluid">
-        <div class="col-2">
-          <ul class="list">
-            <li>
-              <a href="#">asd</a>
-            </li>
-            <li>
-              <a href="#">asd</a>
-            </li>
-            <li>
-              <a href="#">asd</a>
-            </li>
-            <li>
-              <a href="#">asd</a>
-            </li>
-            <li>
-              <a href="#">asd</a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+            <h3 class="footer-list__title"><a href="#">展覧会</a></h3>
+            <ul class="footer-list list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">開催中の展覧会</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">開催予定の展覧会</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">過去の展覧会</a>
+              </li>
+            </ul>
+
+            <div class="sub-list mt-5">
+              <h3 class="footer-list__title"><a href="#">チケット購入</a></h3>
+              <h3 class="footer-list__title"><a href="#">コレクション</a></h3>
+              <h3 class="footer-list__title">
+                <a href="#">SPECIAL FEATURES</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+            <h3 class="footer-list__title">
+              <a href="#">ラーニングプログラム</a>
+            </h3>
+            <ul class="footer-list list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">土曜講座</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">ギャラリートーク</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">「みる誕生」鑑賞会</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">ファミリープログラム</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#"
+                  >スクールデー/スクールプログラム</a
+                >
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#"
+                  >ティーチャーズプログラム</a
+                >
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#"
+                  >ARCラーニングプログラム</a
+                >
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">インターンシップ</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#"
+                  >企業・法人向けプログラム</a
+                >
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">アウトリーチ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+            <h3 class="footer-list__title"><a href="#">ご利用案内</a></h3>
+            <ul class="footer-list list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">フロアガイド</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">入館時のご案内</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">バリアフリー情報</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">公式アプリ</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">ミュージアムカフェ</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">ミュージアムショップ</a>
+              </li>
+            </ul>
+
+            <div class="sub-list mt-5">
+              <h3 class="footer-list__title"><a href="#">ニュース</a></h3>
+              <h3 class="footer-list__title"><a href="#">プレスの方へ</a></h3>
+              <h3 class="footer-list__title"><a href="#">お問い合わせ</a></h3>
+              <h3 class="footer-list__title"><a href="#">よくある質問</a></h3>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+            <h3 class="footer-list__title"><a href="#">当館について</a></h3>
+            <ul class="footer-list list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">創設者・石橋正二郎</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">コンセプト</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">建築・デザインについて</a>
+              </li>
+            </ul>
+
+            <div class="sub-list mt-5">
+              <h3 class="footer-list__title"><a href="#">利用規約</a></h3>
+              <h3 class="footer-list__title">
+                <a href="#">個人情報保護方針</a>
+              </h3>
+              <h3 class="footer-list__title"><a href="#">関連リンク</a></h3>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6">
+            <h3 class="footer-list__title"><a href="#">FOLLOW US</a></h3>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="../src/img/tw-1.png" alt="twitter" width="40px" />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="../src/img/fa-1.png" alt="facebook" width="40px" />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="../src/img/in-2.png" alt="instagram" width="40px" />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="../src/img/you-2.png" alt="youtube" width="40px" />
+                </a>
+              </li>
+            </ul>
+            <a
+              class="btn btn-outline-light text-light mt-3 w-100 py-1 d-flex align-items-center justify-content-between"
+              href="#"
+            >
+              オンラインショップ
+              <img src="../src/img/supermarket.svg" alt="cart" width="30px" />
+            </a>
+          </div>
+
+          <div class="col-12 mt-5 px-0">
+            <div
+              class="copy-right text-light d-flex align-items-end justify-content-between"
+            >
+              <p>
+                © Artizon Museum, Ishibashi Foundation. All rights reserved.
+              </p>
+              <img src="../src/img/artizon_logotype_ja_d-2.png" alt="logo" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <script src="../src/js/jquery.min.js"></script>
+    <script src="../src/js/slick.min.js"></script>
     <script src="../src/js/index.js"></script>
   </body>
 </html>
