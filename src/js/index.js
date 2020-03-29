@@ -283,6 +283,41 @@ $(document).ready(function() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: false
+    dots: false,
+    prevArrow:
+      '<button type="button" class="slick-prev slick-arrow"><img src="../src/img/angle-left.svg" /></button>',
+    nextArrow:
+      '<button type="button" class="slick-next slick-arrow"><img src="../src/img/angle-right.svg" /></button>'
   });
+
+  setPickupSlide();
+
+  $(window).resize(setPickupSlide);
 });
+
+function setPickupSlide() {
+  $('.pickup__slider')
+    .not('.slick-initialized')
+    .slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      prevArrow:
+        '<button type="button" class="slick-prev slick-arrow"><img src="../src/img/angle-left-dark.svg" /></button>',
+      nextArrow:
+        '<button type="button" class="slick-next slick-arrow"><img src="../src/img/angle-right-dark.svg" /></button>',
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 675,
+          settings: 'unslick'
+        }
+      ]
+    });
+}
