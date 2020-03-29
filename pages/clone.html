@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../public/css/slick.css" />
     <link rel="stylesheet" href="../public/css/style.css" />
   </head>
-  <body class="x-hidden">
+  <body class="x-hidden clone">
     <header id="header" class="full-screen-height bg-warning">
       <section class="top-bar">
         <div class="lang-section bg-black d-flex align-items-end">
@@ -44,51 +44,82 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto text-dark">
+              <ul class="top-nav navbar-nav ml-auto text-dark">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">展覧会</a>
+                  <ul class="top-nav__lv2">
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催中の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催予定の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link disabled" disabled href="#"
+                        >過去の展覧会</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle no-after hover"
-                    href="#"
-                    data-toggle="dropdown"
-                  >
+                  <a class="nav-link dropdown-toggle no-after hover" href="#">
                     チケット購入
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">コレクション</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">ラーニングプログラム</a>
+                  <ul class="top-nav__lv2">
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催中の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催予定の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催中の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催予定の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催中の展覧会</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">開催予定の展覧会</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">ご利用案内</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">当館について</a>
+                  <ul class="top-nav__lv2">
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#"
+                        >創設者・石橋正二郎</a
+                      >
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">沿革</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#">コンセプト</a>
+                    </li>
+                    <li class="top-nav__lv2-item">
+                      <a class="top-nav__lv2-link" href="#"
+                        >建築・デザインについて</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle no-after"
-                    href="#"
-                    data-toggle="dropdown"
-                  >
+                  <a class="nav-link dropdown-toggle no-after" href="#">
                     オンラインショップ
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
@@ -107,25 +138,40 @@
       <section class="hero">
         <div class="hero-slide">
           <div class="hero-slide__item">
-            <img
-              class="hero__img"
-              src="../src/img/sight_to_see.jpg"
-              alt="sight to see"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../src/img/sight_to_see_sp.jpg"
+              />
+              <img
+                class="hero-img w-100 h-100 obj-cover"
+                src="../src/img/sight_to_see.jpg"
+              />
+            </picture>
           </div>
           <div class="hero-slide__item">
-            <img
-              class="hero__img"
-              src="../src/img/sight_to_see.jpg"
-              alt="sight to see"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../src/img/sp_home_MainBnr01.jpg"
+              />
+              <img
+                class="hero-img w-100 h-100 obj-cover"
+                src="../src/img/pc_home_MainBnr01.jpg"
+              />
+            </picture>
           </div>
           <div class="hero-slide__item">
-            <img
-              class="hero__img"
-              src="../src/img/sight_to_see.jpg"
-              alt="sight to see"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../src/img/sp_home_MainBnr02.jpg"
+              />
+              <img
+                class="hero-img w-100 h-100 obj-cover"
+                src="../src/img/pc_home_MainBnr02.jpg"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -137,12 +183,31 @@
           <div class="row">
             <div class="col-12">
               <figure>
-                <img
-                  class="mb-5"
-                  src="../src/img/ticket_bunner_pc-2.jpg"
-                  alt=""
-                />
-                <img src="../src/img/guide_bunner_pc-1.jpg" alt="" />
+                <picture>
+                  <source
+                    media="(min-width: 675px)"
+                    srcset="../src/img/ticket_bunner_pc-2.jpg"
+                  />
+                  <source
+                    media="(max-width: 675px)"
+                    srcset="../src/img/ticket_bunner_sp.jpg"
+                  />
+                  <img class="w-100" src="../src/img/ticket_bunner_sp.jpg" />
+                </picture>
+                <picture class="mt-5">
+                  <source
+                    media="(min-width: 675px)"
+                    srcset="../src/img/guide_bunner_pc-1.jpg"
+                  />
+                  <source
+                    media="(max-width: 675px)"
+                    srcset="../src/img/guide_bunner_sp-1.jpg"
+                  />
+                  <img
+                    class="mt-3 w-100"
+                    src="../src/img/guide_bunner_pc-1.jpg"
+                  />
+                </picture>
               </figure>
             </div>
           </div>
@@ -368,7 +433,37 @@
     <footer class="footer mt-lg">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+          <div class="show-if-small col-12 site-index">
+            <h2 class="text-light sub-list-mobile-open">
+              <img src="../src/img/arrow.svg" alt="arrow" width="30px" />
+              <span class="ml-1">SITE INDEX</span>
+            </h2>
+            <div class="sub-list sub-list-mobile mt-3">
+              <h3 class="footer-list__title"><a href="#">展覧会</a></h3>
+              <h3 class="footer-list__title"><a href="#">チケット購入</a></h3>
+              <h3 class="footer-list__title">
+                <a href="#">コレクション</a>
+              </h3>
+              <h3 class="footer-list__title"><a href="#">チケット購入</a></h3>
+              <h3 class="footer-list__title"><a href="#">コレクション</a></h3>
+              <h3 class="footer-list__title">
+                <a href="#">SPECIAL FEATURES</a>
+              </h3>
+              <h3 class="footer-list__title"><a href="#">ニュース</a></h3>
+              <h3 class="footer-list__title"><a href="#">プレスリリース</a></h3>
+              <h3 class="footer-list__title">
+                <a href="#">お問い合わせ</a>
+              </h3>
+              <h3 class="footer-list__title"><a href="#">当館について</a></h3>
+
+              <a class="btn btn-outline-light text-light mt-3 w-100 py-1 d-flex align-items-center justify-content-between" href="#">
+                オンラインショップ
+                <img src="../src/img/supermarket.svg" alt="cart" width="30px">
+              </a>
+            </div>
+          </div>
+
+          <div class="hide-if-small col-lg col-md-4 col-sm-6 mb-md-5 col-12">
             <h3 class="footer-list__title"><a href="#">展覧会</a></h3>
             <ul class="footer-list list">
               <li class="footer-list__item">
@@ -391,7 +486,7 @@
             </div>
           </div>
 
-          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+          <div class="hide-if-small col-lg col-md-4 col-sm-6 mb-md-5 col-12">
             <h3 class="footer-list__title">
               <a href="#">ラーニングプログラム</a>
             </h3>
@@ -437,7 +532,7 @@
             </ul>
           </div>
 
-          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+          <div class="hide-if-small col-lg col-md-4 col-sm-6 mb-md-5 col-12">
             <h3 class="footer-list__title"><a href="#">ご利用案内</a></h3>
             <ul class="footer-list list">
               <li class="footer-list__item">
@@ -468,7 +563,7 @@
             </div>
           </div>
 
-          <div class="col-lg col-md-4 col-sm-6 mb-md-5">
+          <div class="hide-if-small col-lg col-md-4 col-sm-6 mb-md-5 col-12">
             <h3 class="footer-list__title"><a href="#">当館について</a></h3>
             <ul class="footer-list list">
               <li class="footer-list__item">
@@ -491,7 +586,7 @@
             </div>
           </div>
 
-          <div class="col-lg col-md-4 col-sm-6">
+          <div class="site-social col-lg col-md-4 col-sm-6 col-12">
             <h3 class="footer-list__title"><a href="#">FOLLOW US</a></h3>
             <ul class="social-list">
               <li class="social-list__item">
@@ -516,7 +611,7 @@
               </li>
             </ul>
             <a
-              class="btn btn-outline-light text-light mt-3 w-100 py-1 d-flex align-items-center justify-content-between"
+              class="hide-if-small btn btn-outline-light text-light mt-3 w-100 py-1 d-flex align-items-center justify-content-between"
               href="#"
             >
               オンラインショップ
@@ -648,17 +743,26 @@
           </li>
         </ul>
 
-        <button class="btn btn-outline-light text-light w-100 text-left d-block mt-5 py-2">オンラインショップ</button>
-        <button class="btn btn-outline-light text-light w-100 text-left d-block mt-3 py-2">お問い合わせ</button>
+        <button
+          class="btn btn-outline-light text-light w-100 text-left d-block mt-5 py-2"
+        >
+          オンラインショップ
+        </button>
+        <button
+          class="btn btn-outline-light text-light w-100 text-left d-block mt-3 py-2"
+        >
+          お問い合わせ
+        </button>
       </div>
 
       <button class="close-mobile-menu" type="button">
-        <img src="../src/img/close.svg" alt="close" width="30px">
+        <img src="../src/img/close.svg" alt="close" width="30px" />
       </button>
     </section>
 
     <script src="../src/js/jquery.min.js"></script>
     <script src="../src/js/slick.min.js"></script>
     <script src="../src/js/index.js"></script>
+    <script src="../src/js/clone.js"></script>
   </body>
 </html>

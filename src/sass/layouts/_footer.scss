@@ -1,5 +1,11 @@
 .footer {
   padding: 0 50px;
+
+  @media only screen and (max-width: 675px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   padding-top: 60px;
   padding-bottom: 50px;
   background-color: $color-black;
