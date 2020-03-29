@@ -293,6 +293,18 @@ $(document).ready(function() {
   setPickupSlide();
 
   $(window).resize(setPickupSlide);
+
+  $('.languages__title').on('click', function() {
+    $('.languages-list').toggleClass('active');
+  });
+
+  $('#open-menu-mobile').on('click', function() {
+    $('.menu-mobile').addClass('active');
+  });
+
+  $('.close-mobile-menu').on('click', function() {
+    $('.menu-mobile').removeClass('active');
+  });
 });
 
 function setPickupSlide() {

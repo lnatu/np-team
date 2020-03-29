@@ -35,19 +35,12 @@
           </div>
         </div>
         <div class="navigation-section">
-          <nav class="navbar navbar-expand navbar-light bg-light">
+          <nav id="main-nav" class="navbar navbar-expand navbar-light bg-light">
             <a class="navbar-brand" href="#">
               <img src="../src/img/logo-1.png" width="250px" alt="logo" />
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+            <button id="open-menu-mobile" class="border-0" type="button">
+              <img src="../src/img/open-menu.svg" alt="menu" width="30px" />
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -209,7 +202,8 @@
                     <p class="exhibition__caption-floor">4~6F</p>
                     <h3 class="exhibition__caption-title">
                       <a href="#">
-                        ジャム・セッション　石橋財団コレクション×鴻池朋子</a>
+                        ジャム・セッション　石橋財団コレクション×鴻池朋子</a
+                      >
                     </h3>
                   </div>
                   <div class="exhibition__desc">
@@ -228,7 +222,9 @@
                     <p class="exhibition__caption-floor">4~6F</p>
                     <h3 class="exhibition__caption-title">
                       <a href="#">
-                        第58回ヴェネチア・ビエンナーレ国際美術展 日本館展示帰国展 Cosmo- Eggs｜ 宇宙の卵</a>
+                        第58回ヴェネチア・ビエンナーレ国際美術展
+                        日本館展示帰国展 Cosmo- Eggs｜ 宇宙の卵</a
+                      >
                     </h3>
                   </div>
                   <div class="exhibition__desc">
@@ -247,7 +243,9 @@
                     <p class="exhibition__caption-floor">4~6F</p>
                     <h3 class="exhibition__caption-title">
                       <a href="#">
-                        石橋財団コレクション選　特集コーナー展示 新収蔵作品特別展示：パウル・クレー</a>
+                        石橋財団コレクション選　特集コーナー展示
+                        新収蔵作品特別展示：パウル・クレー</a
+                      >
                     </h3>
                   </div>
                   <div class="exhibition__desc">
@@ -539,6 +537,125 @@
         </div>
       </div>
     </footer>
+
+    <section class="menu-mobile">
+      <h3 class="menu-mobile__title">ホーム</h3>
+      <div class="languages">
+        <h4 class="languages__title">
+          <img src="../src/img/internet.svg" alt="internet" width="25px" />
+          <span class="ml-1">Language</span>
+        </h4>
+        <ul class="languages-list">
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">日本語</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">English</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">한국어</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">简体中文</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">Français</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">Español</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">Deutsch</a>
+          </li>
+          <li class="languages-list__item">
+            <a class="languages-list__link" href="#">Italiano</a>
+          </li>
+        </ul>
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control" />
+            <button type="submit" class="search-icon">
+              <img src="../src/img/search.svg" alt="search" width="20px" />
+            </button>
+          </div>
+        </form>
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">展覧会</a>
+            <ul class="main-nav__lv2">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">開催中の展覧会</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">開催予定の展覧会</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">過去の展覧会</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">チケット購入</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">コレクション</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">ラーニングプログラム</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">ご利用案内</a>
+            <ul class="main-nav__lv2">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">来館のご案内</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">フロアガイド</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">入館時のご案内</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">バリアフリー情報</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">公式アプリ</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">ミュージアムカフェ</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">ミュージアムショップ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link lead" href="#">当館について</a>
+            <ul class="main-nav__lv2">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">創設者・石橋正二郎</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">沿革</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">コンセプト</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">建築・デザインについて</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="btn btn-outline-light text-light w-100 text-left d-block mt-5 py-2">オンラインショップ</button>
+        <button class="btn btn-outline-light text-light w-100 text-left d-block mt-3 py-2">お問い合わせ</button>
+      </div>
+
+      <button class="close-mobile-menu" type="button">
+        <img src="../src/img/close.svg" alt="close" width="30px">
+      </button>
+    </section>
 
     <script src="../src/js/jquery.min.js"></script>
     <script src="../src/js/slick.min.js"></script>
