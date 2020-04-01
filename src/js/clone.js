@@ -37,6 +37,16 @@ $(document).ready(function() {
   $('.sub-list-mobile-open').on('click', function() {
     $('.sub-list-mobile').toggleClass('active');
   });
+
+  $('.search-item .nav-link').on('click', function(e) {
+    e.preventDefault();
+    $('.form-item').addClass('show');
+  });
+
+  $('.close-form-button').on('click', function(e) {
+    e.preventDefault();
+    $('.form-item').removeClass('show');
+  });
 });
 
 function setPickupSlide() {
